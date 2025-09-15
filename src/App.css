@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller */
+  .searchBar {
+    margin: 0 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for phones */
+  .searchBar {
+    margin: 0 30px;
+  }
+}

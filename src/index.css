@@ -26,6 +26,9 @@ code {
   background-color: #e7e7e7;
   border-radius: 6px;
 }
+.searchBar input:focus{
+  outline: 2px solid orange;
+}
 .searchBar button{
   width: 90px;
   background-color: orange;
@@ -44,7 +47,7 @@ code {
   /* background-color: blueviolet; */
   margin: auto;
   margin-top: 44px;
-
+  margin-bottom: 35px;
 }
 .meals img{
   width: 100%;
@@ -81,7 +84,7 @@ code {
  }
  .mealInfo {
   /* width: 90%; */
-  height: 90vh;
+  height: 91vh;
   margin: auto;
   display: flex;
   gap: 22px;
@@ -99,11 +102,31 @@ code {
   color: #fff;
  }
 .mealInfo .info{
-  margin-top: -112px;
+  margin-top: -12px;
 }
 .msg{
   text-align: center;
 }
 .head{
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller */
+  .mealInfo{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mealInfo .info{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for phones */
+  .mealInfo img{
+    width: 300px;
+    height: 300px;
+  }
 }
